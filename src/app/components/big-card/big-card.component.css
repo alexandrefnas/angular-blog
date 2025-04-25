@@ -30,6 +30,7 @@
 
 .big-card__descripton {
   margin-top: 10px;
+  text-align: justify;
 }
 
 .big-card__descripton > p {
