@@ -1,4 +1,4 @@
-export const datafake = [
+"questions":{
 {
   "id":1,
   "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQPPWCBOH28EtW-J3RydNPYQWzJMjY4WxvA&s",
@@ -168,5 +168,4 @@ export const datafake = [
   "title": "Sergipe",
   "description":"Sergipe é o menor estado do Brasil, localizado na região Nordeste, com a capital em Aracaju, uma cidade conhecida por sua qualidade de vida, belezas naturais e tranquilidade. O estado possui um litoral encantador, com praias como Atalaia, Praia do Saco, Coroa do Meio e Aracaju, que atraem turistas em busca de sol, mar e relaxamento. Além do litoral, Sergipe tem áreas de sertão, manguezais e algumas regiões de caatinga. A economia sergipana é baseada em setores como agricultura, pecuária, pesca e indústria, com destaque para a produção de petróleo e gás. Sergipe também é conhecido pela produção de frutas, como caju, manga e coco, e por sua agricultura familiar. O estado possui um forte setor pesqueiro, sendo um dos maiores produtores de camarões do Brasil. O turismo, especialmente nas praias e no ecoturismo, também é uma fonte importante de receita. Culturalmente, Sergipe é um estado de rica tradição popular, com influências afro-brasileiras, indígenas e portuguesas. O forró, o frevo e o baião são ritmos típicos, e as festas juninas, especialmente o São João, são celebradas com grande entusiasmo. O Carnaval de Aracaju e o Festival de Verão também atraem muitos turistas. A folia de reis, o cavalo-marinho e o boi-bumbá são outras manifestações culturais de destaque. A culinária de Sergipe é deliciosa e variada, com pratos típicos como carne de sol com feijão verde, arroz de cuxá, baião de dois, moqueca de peixe e sururu (molusco típico da região). O cuscuz e o beiju também fazem parte do cardápio diário. Com um litoral lindo, rica cultura popular e crescente desenvolvimento econômico, Sergipe é um estado que combina tradição, natureza e hospitalidade, oferecendo uma experiência única para quem visita a região."
 }
-
-]
+}
