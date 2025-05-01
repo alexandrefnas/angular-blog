@@ -1,19 +1,25 @@
 <app-menu-title></app-menu-title>
 <div class="container__articles">
-  <div class="articles__main">
-    <app-big-card
-      id="1"
-      photoCover="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQPPWCBOH28EtW-J3RydNPYQWzJMjY4WxvA&s"
-      cardTitle="Conheça o Brasil"
-      cardDescription="Conhecido por sua rica diversidade cultural, natural e étnica, o país abriga a maior parte da Floresta Amazônica, além de praias tropicais, cidades vibrantes como Rio de Janeiro e São Paulo, e um povo acolhedor. A cultura brasileira é marcada pela mistura de influências indígenas, africanas e europeias, refletida na música, na culinária e nas festas populares, como o famoso Carnaval. O idioma oficial é o português e a moeda é o real (R$)."
-    ></app-big-card>
-  </div>
-  <div class="articles__others">
-    <app-small-card
-      *ngFor="let option of question; let i = index"
-      id="{{option.id}}"
-      photoCover_small="{{option.photo}}"
-      cardTitle="{{option.title}}"
-    ></app-small-card>
-  </div>
+	<div class="articles__main">
+		<app-big-card
+			id="1"
+			photoCover="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQPPWCBOH28EtW-J3RydNPYQWzJMjY4WxvA&s"
+			cardTitle="Conheça o Brasil"
+			cardDescription="{{ cardDescription | quebraLinha }}"
+		></app-big-card>
+		<!-- cardDescription="Conhecido por sua rica diversidade cultural, natural e étnica, o país abriga a maior parte da Floresta Amazônica, além de praias tropicais, cidades vibrantes como Rio de Janeiro e São Paulo, e um povo acolhedor. A cultura brasileira é marcada pela mistura de influências indígenas, africanas e europeias, refletida na música, na culinária e nas festas populares, como o famoso Carnaval. O idioma oficial é o português e a moeda é o real (R$)." -->
+	</div>
+	<div class="articles__others">
+		<app-small-card
+			*ngFor="let option of filteredQuestions()"
+			[id]="option.id"
+			[photoCover_small]="option.photo"
+			[cardTitle]="option.title"
+		></app-small-card>
+	</div>
 </div>
+
+<!-- *ngFor="let option of filteredQuestions(); let i = index"
+id="{{ option.id }}"
+photoCover_small="{{ option.photo }}"
+cardTitle="{{ option.title }}" -->

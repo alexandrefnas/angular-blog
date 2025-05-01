@@ -11,4 +11,16 @@
 .container__menu-bar > ul > li {
   margin-right: 30px;
   list-style: none;
+  transition: transform .8s;
+}
+
+.container__menu-bar > ul > li:hover {
+   /* color: yellow; */
+  /*font-weight: 700; */
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.container__menu-bar > ul > li>a:hover {
+  color: yellow;
 }

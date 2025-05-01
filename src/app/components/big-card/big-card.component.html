@@ -5,10 +5,10 @@
         alt=""
     >
   </div>
-  <div class=" big-card__title">
+  <div class="big-card__title">
     <h1><a [routerLink]="['content',id]">{{cardTitle}}</a></h1>
   </div>
   <div class="big-card__descripton">
-    <p>{{cardDescription}}</p>
+    <p [innerHTML]="cardDescription"></p>
   </div>
 </div>

@@ -26,6 +26,7 @@
 
 .big-card__title > h1 {
   font-size: 24px;
+  transition: transform .8s;
 }
 
 .big-card__descripton {
@@ -35,4 +36,15 @@
 
 .big-card__descripton > p {
   color: gray;
+}
+
+.big-card__title > h1 > a:hover {
+  position: relative;
+  color: yellow;
+  font-weight: 800;
+}
+
+.big-card__title > h1:hover {
+  transform: scale(1.1);
+
 }

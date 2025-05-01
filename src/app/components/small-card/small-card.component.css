@@ -8,22 +8,34 @@
 .container__small-card-content {
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .smal-card__photo {
-
+	overflow: hidden;
 }
 
-.smal-card__photo > img {
+.smal-card__photo > a > img {
   width: 200px;
   min-width: 200px;
   margin-right: 20px;
+  transition: transform .8s;
+}
+
+.smal-card__photo > a > img:hover {
+  transform: scale(1.1);
+
 }
 
 .smal-card__title {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform .8s;
+}
+
+.smal-card__title:hover {
+  transform: scale(1.1);
 }
 
 .container__small-card-separator {
@@ -31,3 +43,9 @@
   margin-bottom: 20px;
 
 }
+
+.smal-card__title > p > a:hover {
+  color: yellow;
+  font-weight: 700;
+}
+
